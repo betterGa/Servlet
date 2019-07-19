@@ -42,6 +42,7 @@ public class QueryServlet extends HttpServlet {
         String city = req.getParameter("city");
         List<ScenicSpot> scenicSpotstoArrayList = new ArrayList<ScenicSpot>();
         if(city==null||city.length()==0)
+
         {for(Map.Entry<String,List<String>> entry:scenicSpot.entrySet()  )
         {
 String citykey=entry.getKey();
