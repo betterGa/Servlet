@@ -13,9 +13,38 @@
         <url-pattern>/form</url-pattern>
     </servlet-mapping>
     
+
+    <servlet>
+                <servlet-name>QueryServlet</servlet-name>
+        <servlet-class>QueryServlet</servlet-class>
+            </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>QueryServlet</servlet-name>
+        <url-pattern>/query</url-pattern>
+    </servlet-mapping>
     
     
     
+    
+    
+    <servlet>
+        <servlet-name>UploadFileServlet</servlet-name>
+        <servlet-class>UploadFileServlet</servlet-class>
+        <multipart-config>
+                <!--表示在Part调用write方法时，要将已上传的文件保存在磁盘中的位置。此处绝对路径-->
+        <location>E:/upload</location>
+        <!--上传文件的最大容量，默认值为-1，表示没有限制。大于指定值将会遭到拒绝。单位：字节-->
+        <max-file-size>1048576</max-file-size>
+        <!--上传文件超过这个容量界限时，会被写入磁盘 单位：字节-->
+        <file-size-threshold>5242880</file-size-threshold>
+        </multipart-config>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UploadFileServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
     
     
     
