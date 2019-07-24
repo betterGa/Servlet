@@ -15,6 +15,15 @@
     </servlet-mapping>
     
     
+  <servlet>
+    <servlet-name>Top10Servlet</servlet-name>
+      <servlet-class>Top10Servlet</servlet-class>
+</servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Top10Servlet</servlet-name>
+        <url-pattern>/top10</url-pattern>
+    </servlet-mapping>
     
     
 </web-app>
