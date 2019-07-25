@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+
+<html lang="en">
+ <head>
+<meta charset="UTF-8">
+ 
+ <title>修改人员信息</title>
+   
+   </head>
+             
+<body>
+            <h1>修改人员信息</h1>
+                      <form method="post" action="/person">
+                      
+<input type="text" name="id" hidden="hidden" value=""person.getId()"">
+姓名:<input type="text" name="name" value=""+person.getName()+"" placeholder="请输入姓名">
+年龄:<input type="text" name="age"   value="" +person.getAge()+"" placeholder="请输入年龄">
+<input type="submit" value="保存更新">
+     </form>
+     </body>
+          </html>
